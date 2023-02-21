@@ -19,6 +19,7 @@
 package androidx.core.text
 
 import android.text.TextUtils
+import android.webkit.URLUtil
 
 /**
  * Html-encode the string.
@@ -26,3 +27,17 @@ import android.text.TextUtils
  * @see TextUtils.htmlEncode
  */
 public inline fun String.htmlEncode(): String = TextUtils.htmlEncode(this)
+
+/**
+ * Check if the url is a network url.
+ *
+ * @see URLUtil.isNetworkUrl
+ */
+public inline fun String?.isNetworkUrl(): Boolean = URLUtil.isNetworkUrl(this)
+
+/**
+ * Check if the url is valid.
+ *
+ * @see URLUtil.isValidUrl
+ */
+public inline fun String?.isValidUrl(): Boolean = URLUtil.isValidUrl(this)
