@@ -2,7 +2,7 @@ plugins {
     application
     kotlin("jvm")
     // Use ShadowJar plugin to build fat jar.
-    id("com.github.johnrengelman.shadow")
+    id("com.gradleup.shadow")
 }
 
 application {
